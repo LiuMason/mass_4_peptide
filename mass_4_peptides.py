@@ -19,7 +19,7 @@ def calculate_mass(substrings, mass_table, terminal):
 st.title("Mass Calculator for Sequence Substrings")
 
 sequence = st.text_input("Enter the sequence:")
-terminal = st.number_input("Enter the terminal value:", value=0, step=1)
+terminal = st.number_input("Enter the terminal value (N+C):", value=18, step=1)
 uploaded_file = st.file_uploader("Upload Mass Table (CSV with 'char' and 'value' columns)", type=["csv"])
 
 if uploaded_file is not None:
